@@ -1,0 +1,26 @@
+CREATE TABLE PetStore
+(id INTEGER PRIMARY KEY, animal TEXT, breed TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO petstore VALUES (1, "dog", "Husky", 2, 100);
+INSERT INTO petstore VALUES (2, "dog", "Pitbull", 1, 75);
+INSERT INTO petstore VALUES (3, "dog", "Yorkie", 2, 400);
+INSERT INTO petstore VALUES (4, "dog", "Chihuahua", 5, 200);
+INSERT INTO petstore VALUES (5, "dog", "Westie", 3, 300);
+INSERT INTO petstore VALUES (6, "dog", "Great Dane", 1, 350);
+INSERT INTO petstore VALUES (7, "dog", "Pug", 5, 150);
+INSERT INTO petstore VALUES (8, "dog", "Chow Chow", 1, 300);
+INSERT INTO petstore VALUES (9, "dog", "Dalmation", 2, 200);
+INSERT INTO petstore VALUES (10, "dog", "Boxer", 1, 300);
+INSERT INTO petstore VALUES (11, "cat", "Persian", 2, 300);
+INSERT INTO petstore VALUES (12, "cat", "Siamese", 2, 300);
+INSERT INTO petstore VALUES (13, "cat", "Blue Russian", 1, 200);
+INSERT INTO petstore VALUES (14, "bird", "Cockatoo", 4, 250);
+INSERT INTO petstore VALUES (15, "bird", "African Grey Parrot", 2, 500);
+
+
+SELECT * FROM petstore;
+
+SELECT * FROM petstore
+ORDER BY price;
+
+SELECT * FROM petstore WHERE animal = "cat" AND price < 300;
